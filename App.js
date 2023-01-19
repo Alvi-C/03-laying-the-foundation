@@ -33,7 +33,13 @@ const HeaderComponent = () => {
 }
 
 // Pass attributes into the tag in JSX
-
+const PassAttributeComponent = (props) => {
+    return (
+        <div style={props.style} key={props.key}>
+            {props.children}
+        </div>
+    )
+}
 
 
 
@@ -44,6 +50,7 @@ const DisplayAllElements = () => {
             {header}
             {headerJsx}
             <HeaderComponent />
+            <PassAttributeComponent style={{ color: "red" }} key="05">Hello I am children of the component passed through attributes.</PassAttributeComponent>
         </div>
     )
 }
