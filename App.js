@@ -43,7 +43,7 @@ const PassAttributeComponent = (props) => {
 
 
 
-// Compisition of component (add a component inside another)
+// Composition of component (add a component inside another)
 const DisplayAllElements = () => {
     return (
         <div>
@@ -54,7 +54,9 @@ const DisplayAllElements = () => {
         </div>
     )
 }
-// console.log(header);
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(<DisplayAllElements />)
 // The function of render() is to modify the DOM
