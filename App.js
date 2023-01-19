@@ -50,7 +50,7 @@ const DisplayAllElements = () => {
             {header}
             {headerJsx}
             <HeaderComponent />
-            <PassAttributeComponent style={{ color: "red" }} key="05">Hello I am children of the component passed through attributes.</PassAttributeComponent>
+            <PassAttributeComponent style={{ color: "red" }} key="05">Hello I am children of the component and passed style and key through attributes.</PassAttributeComponent>
         </div>
     )
 }
